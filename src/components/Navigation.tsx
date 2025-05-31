@@ -10,6 +10,13 @@ const Navigation = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" className="navToggle"/>
             <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
               <Nav.Link as={NavLink} to="/about" className="navLink">About</Nav.Link>
+              <Link to={"https://www.sallyapelmo.com/"} target="_blank">
+                    Graphic Design
+                </Link>
+                <Link to={"https://www.instagram.com/sally___apelmo/"} target="_blank">
+                    Instagram
+                </Link>
+              <p>sally.apelmo@gmail.com</p>
             </Navbar.Collapse>
         </Container>
   </Navbar>
