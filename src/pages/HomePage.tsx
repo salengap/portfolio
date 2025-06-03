@@ -1,17 +1,28 @@
 import { ListGroup } from "react-bootstrap"
 import CardList from "../components/CardList"
+import Navigation from "../components/Navigation"
+import { Link } from "react-router"
 
 const HomePage = () => {
   return (
-    <>
-    <h1>Sally Engström Apelmo</h1>
-    <p>Graphic Designer and Frontend Developer.</p>
-    <hr />
+    <> 
+        <div className="homePageContainer">
+            <div className="title">
+                <div>
+                    <Link to="/" id="titleLink">Sally Apelmo</Link>
+                    <p>Frontend Developer and Graphic Designer.</p>
+                </div>
+                <Navigation
+                page="homepage"
+                />
+            </div>
 
-    <ListGroup>
-        <CardList/>
-    </ListGroup>
-    
+
+            <ListGroup>
+                <CardList/>
+            </ListGroup>
+
+        </div>
     </>
   )
 }

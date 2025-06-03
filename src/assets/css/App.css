@@ -1,1 +1,302 @@
 @import 'bootstrap/dist/css/bootstrap.css';
+
+body {
+  font-family: "mozaic-hum-variable", sans-serif;
+  font-variation-settings: "wght" 400;
+  font-style: normal;
+  background-color: #9cc7ff;
+  margin: 0;
+}
+
+/* Homepage */
+
+.homePageContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* align-items: flex-start; */
+}
+
+.title {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#titleLink {
+  font-size: 2rem;
+  color: #ff6d13;
+  text-decoration: none;
+}
+
+#titleLink:hover {
+  color: #0f56af;
+}
+
+.title p {
+  font-size: 1rem;
+  color: #ff6d13;
+}
+
+/* Navbar*/
+
+.navigationWrapper {
+  /* margin-top: 2rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative; 
+}
+
+.menuToggleBtn {
+  background-color: transparent;
+  border: none;
+  color: #ff6d13;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+.verticalNavbar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color:#febe97;
+  z-index: 5;
+  min-width: 150px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.verticalNavbar.show {
+  display: flex;
+}
+
+.navLink {
+  color: #ff6d13;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: #0f56af;
+}
+  .menuToggleBtn {
+    display: block;
+  }
+
+  .verticalNavbar {
+    display: none;
+    text-align: right; 
+  }
+
+  .verticalNavbar.show {
+    display: flex;
+  }
+
+/*Cards*/
+
+.list-group {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.list-group-item {
+  border: none;
+  background-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.resultListCard {
+  background-color: rgb(9, 159, 92);
+  border: none;
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.cardTitle {
+  font-size: 2rem;
+  color: rgb(205, 248, 228);
+}
+
+.cardText {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  color: rgb(205, 248, 228);
+}
+
+.newRow {
+  display: block;
+  margin-top: 10px;
+}
+
+.resultListCard .btn {
+  background-color: rgb(9, 159, 92);
+  color: rgb(205, 248, 228);
+  border: 1px solid rgb(205, 248, 228);
+}
+
+.resultListCard .btn:hover {
+  background-color: rgb(205, 248, 228);
+  color: rgb(9, 159, 92);
+}
+
+.github {
+  margin-left: 15px;
+}
+
+/*About*/
+
+.about {
+  margin-top: 2rem;
+  width: 90%;
+}
+
+.skills {
+  margin-top: 2rem;
+}
+
+.education {
+  margin-top: 2rem;
+}
+
+.workexperience {
+  margin-top: 2rem;
+}
+
+.selectedclients {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.about h2{
+  margin-bottom: 2rem;
+}
+
+.aboutTitle {
+  font-variation-settings: "wght" 600;
+}
+
+.aboutText {
+  margin-bottom: 3rem;
+}
+
+#backToTopBtn {
+  background-color: transparent;
+  border: none;
+  color: black;
+  text-decoration: underline;
+  margin-bottom: 5rem;
+}
+
+#backToTopBtn:hover {
+  background-color: transparent;
+  border: none;
+  color: #0f56af;
+  text-decoration: underline;
+}
+
+#backToTopBtn:active {
+  background-color: transparent;
+  border: none;
+  color: #0f56af;
+  text-decoration: underline;
+}
+
+/* Always show menu on larger screens */
+@media (min-width: 769px) {
+
+  body {
+    background: linear-gradient(to right,
+    #febe97 0%,    
+    #febe97 40%,
+    #9cc7ff 40%,
+    #9cc7ff 100%
+  );
+  }
+
+  .navigationWrapper {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .verticalNavbar {
+    display: flex !important;
+    text-align: left;
+    gap: 0.5rem;
+  }
+
+  .verticalNavbar a{
+    padding-left: 0;
+  }
+
+  .menuToggleBtn {
+    display: none;
+  }
+
+  .homePageContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: flex-start;
+  }
+
+  .title {
+    position: fixed;
+    top: 15%;
+    left: 5%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #titleLink {
+    font-size: 3.2rem;
+  }
+
+  .title p {
+    font-size: 1rem;
+  }
+
+  .list-group {
+    margin-top: 5%;
+    width: 50%;
+    margin-left: 50%;
+  }
+
+  .about {
+    margin-top: 5%;
+    width: 50%;
+    margin-left: 50%;
+  }
+
+  .resultListCard {
+    padding: 2rem;
+  }
+
+  .cardText {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width:1360px) { 
+
+  #titleLink {
+    font-size: 4.5rem;
+  }
+
+  .title p {
+    font-size: 1.5rem;
+  }
+}
