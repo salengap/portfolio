@@ -25,7 +25,7 @@ const CardList = () => {
                     <Link to={"https://starwar-encyclopedia-apelmo.netlify.app/"} className="btn btn-success" role="button" target="_blank">
                         View page
                     </Link>
-                    <Link to={"https://github.com/the-hive-resistance/fed24-js2-uppgift-1-salengap/commits/main/"} className="btn github" target="_blank">
+                    <Link to={"https://github.com/salengap/starwarsencyclopedia"} className="btn github" target="_blank">
                         Github
                     </Link>
                 </div>
@@ -51,7 +51,7 @@ const CardList = () => {
                     <Link to={"https://bortakvallgrupp9.netlify.app/"} className="btn btn-success" role="button" target="_blank">
                         View page
                     </Link>
-                    <Link to={"https://github.com/the-hive-resistance/fed24-js1-uppgift-2-fed24-js1-inlamningsuppgift-2-grupp-9"} className="btn github" target="_blank">
+                    <Link to={"https://github.com/salengap/Bortakvall"} className="btn github" target="_blank">
                         Github
                     </Link>
                 </div>
