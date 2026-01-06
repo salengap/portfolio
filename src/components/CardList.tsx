@@ -1,65 +1,141 @@
 import Card from "react-bootstrap/Card";
-import ListGroupItem from "react-bootstrap/ListGroupItem"
-import { Link } from "react-router"
-import bortakvallimage from "../assets/img/bortakvall.png"
-import starwarsimage from "../assets/img/starwars2.png"
+import ListGroupItem from "react-bootstrap/ListGroupItem";
+import { Link } from "react-router";
+import bortakvallimage from "../assets/img/bortakvall.png";
+import starwarsimage from "../assets/img/starwars2.png";
 
 const CardList = () => {
   return (
     <>
-    <div className="cardRow">
+      <div className="cardRow">
+        <ListGroupItem key="examproject">
+          <Card className="resultListCard">
+            <Card.Title className="cardTitle">Skrift - Exam Project</Card.Title>
+            <Card.Text className="cardText">Individual project</Card.Text>
+            <div
+              className="video-container"
+              style={{ position: "relative", paddingTop: "56.25%" }} // 16:9 ratio
+            >
+              <iframe
+                src="https://player.vimeo.com/video/1151854068?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&badge=0"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                title="Exam Project Skrift"
+              ></iframe>
+            </div>
 
+            <div className="cardBody">
+              <p className="cardText">
+                My exam project is called Skrift – a Swedish word that can refer
+                to both the act of writing and a publication in general. With
+                Skrift I wanted to develop a page that you could use for your
+                book club (with possibilities to expand to other kinds of clubs
+                in the cultural field). I have used Svelte/SvelteKit as
+                frameworks and Supabase as database and Better Auth for
+                authentication. My aim with this project is partially to create
+                an MVP that can give value to a book club in the end, and to try
+                to work in a framework that is quite new for me. The project is
+                deployed on Netlify.
+              </p>
+              <Link
+                to={"https://skriftarchive.com/"}
+                className="btn btn-success"
+                role="button"
+                target="_blank"
+              >
+                View page
+              </Link>
+              <Link
+                to={"https://github.com/salengap/skrift"}
+                className="btn github"
+                target="_blank"
+              >
+                Github
+              </Link>
+            </div>
+          </Card>
+        </ListGroupItem>
         <ListGroupItem key="starwars">
-            <Card className="resultListCard">
-                <Card.Title className="cardTitle">Starwars Encyclopedia</Card.Title>
-                <Card.Text className="cardText">Individual project</Card.Text>
-                <Card.Img variant="top" src={starwarsimage} />
-                <div className="cardBody">
-                    <p className="cardText"> 
-                        I built a Star Wars encyclopedia using React with TypeScript, 
-                        React Router, and Axios, with full type coverage and URL-based 
-                        pagination and search using URLSearchParams. All API communication 
-                        is handled through a centralized service layer, and has error and loading handling. 
-                        The project is deployed on Netlify.
-                    </p>
-                    <Link to={"https://starwar-encyclopedia-apelmo.netlify.app/"} className="btn btn-success" role="button" target="_blank">
-                        View page
-                    </Link>
-                    <Link to={"https://github.com/salengap/starwarsencyclopedia"} className="btn github" target="_blank">
-                        Github
-                    </Link>
-                </div>
-            </Card>
+          <Card className="resultListCard">
+            <Card.Title className="cardTitle">Starwars Encyclopedia</Card.Title>
+            <Card.Text className="cardText">Individual project</Card.Text>
+            <Card.Img variant="top" src={starwarsimage} />
+            <div className="cardBody">
+              <p className="cardText">
+                I built a Star Wars encyclopedia using React with TypeScript,
+                React Router, and Axios, with full type coverage and URL-based
+                pagination and search using URLSearchParams. All API
+                communication is handled through a centralized service layer,
+                and has error and loading handling. The project is deployed on
+                Netlify.
+              </p>
+              <Link
+                to={"https://starwar-encyclopedia-apelmo.netlify.app/"}
+                className="btn btn-success"
+                role="button"
+                target="_blank"
+              >
+                View page
+              </Link>
+              <Link
+                to={"https://github.com/salengap/starwarsencyclopedia"}
+                className="btn github"
+                target="_blank"
+              >
+                Github
+              </Link>
+            </div>
+          </Card>
         </ListGroupItem>
         <ListGroupItem key={"bortakvall"}>
-            <Card className="resultListCard">
-                <Card.Title className="cardTitle">Bortakväll</Card.Title>
-                <Card.Text className="cardText">Group Project with Tilde Tarkiainen Ljungquist and Teddie Finström.</Card.Text>
-                <Card.Img variant="top" src={bortakvallimage} />
-                <div className="cardBody">
-                    <p className="cardText">
-                        We built a simple web shop using TypeScript, Vite, and modern JavaScript. 
-                        The layout is responsive using CSS Flexbox/Grid, and all data is managed in JavaScript, 
-                        not the DOM. We communicated with an external REST API through a separate module and published 
-                        the project via Netlify.
-
-                    <span className="newRow">
-                        My responsibility was the shoppingcart and everything concerning adding candy 
-                        to it and being able to use that data in the checkout.
-                    </span>
-                    </p>
-                    <Link to={"https://bortakvallgrupp9.netlify.app/"} className="btn btn-success" role="button" target="_blank">
-                        View page
-                    </Link>
-                    <Link to={"https://github.com/salengap/Bortakvall"} className="btn github" target="_blank">
-                        Github
-                    </Link>
-                </div>
-            </Card>
+          <Card className="resultListCard">
+            <Card.Title className="cardTitle">Bortakväll</Card.Title>
+            <Card.Text className="cardText">
+              Group Project with Tilde Tarkiainen Ljungquist and Teddie
+              Finström.
+            </Card.Text>
+            <Card.Img variant="top" src={bortakvallimage} />
+            <div className="cardBody">
+              <p className="cardText">
+                We built a simple web shop using TypeScript, Vite, and modern
+                JavaScript. The layout is responsive using CSS Flexbox/Grid, and
+                all data is managed in JavaScript, not the DOM. We communicated
+                with an external REST API through a separate module and
+                published the project via Netlify.
+                <span className="newRow">
+                  My responsibility was the shoppingcart and everything
+                  concerning adding candy to it and being able to use that data
+                  in the checkout.
+                </span>
+              </p>
+              <Link
+                to={"https://bortakvallgrupp9.netlify.app/"}
+                className="btn btn-success"
+                role="button"
+                target="_blank"
+              >
+                View page
+              </Link>
+              <Link
+                to={"https://github.com/salengap/Bortakvall"}
+                className="btn github"
+                target="_blank"
+              >
+                Github
+              </Link>
+            </div>
+          </Card>
         </ListGroupItem>
-    </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default CardList
+export default CardList;
