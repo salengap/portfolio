@@ -1,4 +1,4 @@
-@import 'bootstrap/dist/css/bootstrap.css';
+@import "bootstrap/dist/css/bootstrap.css";
 
 body {
   font-family: "mozaic-hum-variable", sans-serif;
@@ -46,7 +46,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  position: relative; 
+  position: relative;
 }
 
 .menuToggleBtn {
@@ -67,7 +67,7 @@ body {
   display: none;
   position: absolute;
   top: 100%;
-  background-color:#febe97;
+  background-color: #febe97;
   z-index: 5;
   min-width: 150px;
   padding-top: 1rem;
@@ -88,18 +88,18 @@ body {
 .navLink:hover {
   color: #0f56af;
 }
-  .menuToggleBtn {
-    display: block;
-  }
+.menuToggleBtn {
+  display: block;
+}
 
-  .verticalNavbar {
-    display: none;
-    text-align: right; 
-  }
+.verticalNavbar {
+  display: none;
+  text-align: right;
+}
 
-  .verticalNavbar.show {
-    display: flex;
-  }
+.verticalNavbar.show {
+  display: flex;
+}
 
 /*Cards*/
 
@@ -168,6 +168,10 @@ body {
   margin-top: 2rem;
 }
 
+.internship {
+  margin-top: 2rem;
+}
+
 .workexperience {
   margin-top: 2rem;
 }
@@ -177,7 +181,7 @@ body {
   margin-bottom: 5rem;
 }
 
-.about h2{
+.about h2 {
   margin-bottom: 2rem;
 }
 
@@ -213,14 +217,14 @@ body {
 
 /* Always show menu on larger screens */
 @media (min-width: 769px) {
-
   body {
-    background: linear-gradient(to right,
-    #febe97 0%,    
-    #febe97 40%,
-    #9cc7ff 40%,
-    #9cc7ff 100%
-  );
+    background: linear-gradient(
+      to right,
+      #febe97 0%,
+      #febe97 40%,
+      #9cc7ff 40%,
+      #9cc7ff 100%
+    );
   }
 
   .navigationWrapper {
@@ -229,14 +233,14 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .verticalNavbar {
     display: flex !important;
     text-align: left;
     gap: 0.5rem;
   }
 
-  .verticalNavbar a{
+  .verticalNavbar a {
     padding-left: 0;
   }
 
@@ -290,8 +294,7 @@ body {
   }
 }
 
-@media screen and (min-width:1360px) { 
-
+@media screen and (min-width: 1360px) {
   #titleLink {
     font-size: 4.5rem;
   }
